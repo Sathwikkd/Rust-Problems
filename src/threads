@@ -1,0 +1,8 @@
+use std::thread::spawn;
+fn main() {
+    let thread1 = spawn(|| {
+        println!("this is first thread");
+    });
+    thread1.join().unwrap();
+    println!("this is thread2");
+}
