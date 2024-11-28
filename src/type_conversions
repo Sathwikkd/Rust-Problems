@@ -1,0 +1,14 @@
+ fn string_to_ascii(s: &str) -> u32 {
+     s.chars().map(|c| c as u32).sum()
+ }
+ fn main() {
+     let name = "i";
+     let ascii_value = string_to_ascii(name);
+     println!("value of name is {ascii_value}");
+ }
+
+fn main() {
+    let a: u8 = 96;
+    let ascii = a as char;
+    println!("'{}'", ascii);
+}
