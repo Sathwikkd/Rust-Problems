@@ -1,0 +1,17 @@
+use std::io;
+
+fn main() {
+    let array = [1, 2, 3, 4, 5];
+    loop {
+        println!("\nenter the index of array to fetch");
+        let mut index = String::new();
+        io::stdin()
+            .read_line(&mut index)
+            .expect("failed to read..try again");
+
+        let index: usize = index.trim().parse().expect("failed to parse!!");
+
+        let ele = array[index];
+        print!("the value of the index:{index} is {ele}");
+    }
+}
