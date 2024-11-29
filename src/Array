@@ -1,0 +1,22 @@
+//accessing array by index
+fn array_index() {
+    let arr = ['A'; 5]; // contins 5 elements in array i.e 5 times character A will be stored in an array
+    println!("{}", arr[4]);
+}
+
+//accessing using debug functionality
+fn debug_mode() {
+    let arr = ['A'; 5]; // contins 5 elements in array i.e 5 times character A will be stored in an array
+    println!("{:?}", arr); // this is debug functionality
+}
+
+//accessing using pretty printing
+fn pretty_printing() {
+    let arr = ["hello, Rust!!!"; 4];
+    println!("{:#?}", arr); //this is pretty printing method
+}
+fn main() {
+    debug_mode(); // this is debug printing functionality
+    array_index(); //index method
+    pretty_printing(); //pretty printing method
+}
