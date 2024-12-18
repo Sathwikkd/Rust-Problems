@@ -1,0 +1,11 @@
+fn string_function(word: &str) -> String {
+    word.split_whitespace()
+        .next()
+        .expect("failed here..")
+        .to_string()
+}
+fn main() {
+    let sentence = "hello....th ere!!";
+    let res = string_function(sentence);
+    println!("{res}")
+}

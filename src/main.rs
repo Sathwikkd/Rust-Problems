@@ -1,7 +1,10 @@
-fn main() {
-    let str1: String = String::from("this is kd");
-    println!("{}", str1);
-    let str2 = str1.clone();
-    println!("{str1}");
-    println!("{str2}")
+fn main(){
+    let mut s1:String=String::from("hi skd");
+    let res=len_finder(&mut s1);
+    println!("length of the string is -> {}",res);
+}
+
+fn len_finder(s2:& mut String)->usize{
+    s2.len()
+
 }
